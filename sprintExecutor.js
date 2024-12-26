@@ -16,10 +16,19 @@ const oraganizeToObject = (obj, number, index) => ({
 });
 const listToObject = (numbers) => numbers.reduce(oraganizeToObject, {});
 
+const put = (code, value, tatgetIndex) => (code[tatgetIndex] = value);
+
 const sprintExecuter = (sprintCode) => {
   let cellNumber = 1;
 
-  while (sprintCode[cellNumber] !== 9) {}
+  while (sprintCode[cellNumber] !== 9) {
+    if (sprintCode[cellNumber] === 0) {
+      put(sprintCode, sprintCode[cellNumber + 1], sprintCode[cellNumber + 2]);
+      cellNumber += 2;
+    }
+    cellNumber += 1;
+  }
+
   return sprintCode;
 };
 
@@ -33,4 +42,4 @@ const main = () => {
   return sprintExecuter(organizedData);
 };
 
-main();
+console.log(main());
