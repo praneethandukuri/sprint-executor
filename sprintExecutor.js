@@ -8,7 +8,10 @@ const removeEmpty = (array) => array.filter((element) => element !== "");
 
 const stringToNumber = (array) => array.map((element) => Number(element));
 
-const oraganizeToObject = (obj, number, index) => ({ ...obj, [index]: number });
+const oraganizeToObject = (obj, number, index) => ({
+  ...obj,
+  [index + 1]: number,
+});
 const listToObject = (numbers) => numbers.reduce(oraganizeToObject, {});
 
 const main = () => {
