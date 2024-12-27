@@ -14,6 +14,7 @@ const oraganizeToObject = (obj, number, index) => ({
   ...obj,
   [index + 1]: number,
 });
+
 const listToObject = (numbers) => numbers.reduce(oraganizeToObject, {});
 
 const put = (code, value, tatgetIndex) => (code[tatgetIndex] = value);
