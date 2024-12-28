@@ -88,6 +88,7 @@ JumpsIfEqual moves the program counter to the specified cell number if value in 
 #### Syntax:
 
 4 [lhs cell number] [rhs cell number] [cell number]
+
 The instruction [4 100 101 15] at line 3 moves the program counter to cell number 15, as a result program execute halt instruction of cell number 15 instead of add instruction of line number 4
 
 ```javascript
@@ -127,6 +128,7 @@ Read reads the user input and put that input to the specified cell number
 #### Syntax:
 
 6 [cell number]
+
 The instruction [6 1] at line 2 reads the user input and put that value in cell number 1
 
 ```javascript
