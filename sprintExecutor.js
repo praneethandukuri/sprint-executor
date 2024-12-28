@@ -1,4 +1,3 @@
-// change all variable names
 const getUserCode = () => {
   const code = prompt("Please paste your code here: 👉").trim();
   return code.length === 0 ? getUserCode() : code;
