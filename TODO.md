@@ -8,3 +8,5 @@
 => code to Put (instruction: 0)
 -> it puts the given number in specified cell number
 -> syntax: 0 [number] [cellValue]
+
+=> instructions data
