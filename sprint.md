@@ -175,7 +175,7 @@ The instruction [9] at line 2, stops the execution of program. Instruction below
 4 | 0 55 101
 ```
 
-===
+================================================================================
 
 # EXAMPLE CODES
 
